@@ -25,6 +25,7 @@ class ToysController < ApplicationController
   # POST /toys.json
   def create
     @toy = Toy.new(toy_params)
+    @toy.user_id = current_user.id
 
     respond_to do |format|
       if @toy.save

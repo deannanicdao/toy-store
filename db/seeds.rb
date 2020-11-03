@@ -10,3 +10,5 @@ User.destroy_all
 
 user_1 = User.create! email: 'a@b.com', password: '123456', password_confirmation: '123456'
 
+
+
