@@ -8,7 +8,7 @@
 
 User.destroy_all
 
-user_1 = User.create! email: 'a@b.com', password: ENV["PASSWORD"], password_confirmation: ENV["CONFIRM_PASSWORD"]
+user_1 = User.create! email: ENV["EMAIL"], password: ENV["PASSWORD"]
 
 
 
